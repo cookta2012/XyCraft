@@ -1,0 +1,21 @@
+package com.foxy.xycraft.handler;
+
+import com.foxy.xycraft.item.XyItems;
+
+import cofh.lib.util.helpers.ItemHelper;
+import cpw.mods.fml.common.registry.GameRegistry;
+import net.minecraft.item.ItemStack;
+
+public class SmeltingHandler {
+	
+	public static void postInit(){
+		GameRegistry reg = null;
+		
+		reg.addSmelting(XyItems.XychoriumBlue, new ItemStack(XyItems.XychoriditeBlue), 2);
+		reg.addSmelting(XyItems.XychoriumBlue, new ItemStack(XyItems.XychoriditeBlue), 2);
+		reg.addSmelting(XyItems.XychoriumBlue, new ItemStack(XyItems.XychoriditeBlue), 2);
+		reg.addSmelting(XyItems.XychoriumBlue, new ItemStack(XyItems.XychoriditeBlue), 2);
+		reg.addSmelting(XyItems.XychoriumBlue, new ItemStack(XyItems.XychoriditeBlue), 2);
+	}
+
+}

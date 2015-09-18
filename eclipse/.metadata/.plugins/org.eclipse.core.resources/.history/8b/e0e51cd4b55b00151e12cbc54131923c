@@ -1,0 +1,5 @@
+package com.foxy.xycraft.item;
+
+public class XyBaseItem {
+
+}

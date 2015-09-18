@@ -1,0 +1,16 @@
+[
+{
+  "modid": "XyCraft",
+  "name": "§3XyCraft",
+  "description": "\u00A77\u00A7oXyCraft is primarily focused on tech expansion. There are \u00A7nmany\u00A77\u00A7o more things to come",
+  "version": "0.13.0",
+  "mcversion": "1.7.10",
+  "url": "",
+  "updateUrl": "",
+  "authorList": ["\u00A76KitsuneAlex", "\u00A77(Soaryn)", "\u00A77(ChickenBones)"],
+  "credits": "Special Thanks to the devs on \u00A7lForgeCraft!",
+  "logoFile": "",
+  "screenshots": [],
+  "dependencies": []
+}
+]

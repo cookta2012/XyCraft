@@ -1,0 +1,13 @@
+package com.foxy.xycraft.block;
+
+import net.minecraft.block.BlockGlass;
+import net.minecraft.block.material.Material;
+
+public class GlassViewer extends BlockGlass {
+
+	public GlassViewer(Material p_i45408_1_, boolean p_i45408_2_) {
+		super(p_i45408_1_, p_i45408_2_);
+		
+	}
+
+}

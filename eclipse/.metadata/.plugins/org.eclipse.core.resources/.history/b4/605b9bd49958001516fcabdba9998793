@@ -1,0 +1,43 @@
+package com.foxy.xycraft.handler;
+
+import com.foxy.xycraft.block.XyBlocks;
+import com.foxy.xycraft.item.XyItems;
+
+import cofh.lib.util.helpers.ItemHelper;
+import cpw.mods.fml.common.registry.GameRegistry;
+import net.minecraft.init.Blocks;
+import net.minecraft.item.ItemStack;
+
+public class CraftingHandler {
+	
+	public static void postInit(){
+		ItemHelper ih = null;
+		GameRegistry reg = null;
+		
+		reg.addShapelessRecipe(ih.cloneStack(XyItems.XychoriumBlue, 1), new Object[]{ih.cloneStack(XyItems.XychoriditeBlue)});
+		reg.addShapelessRecipe(ih.cloneStack(XyItems.XychoriumGreen, 1), new Object[]{ih.cloneStack(XyItems.XychoriditeGreen)});
+		reg.addShapelessRecipe(ih.cloneStack(XyItems.XychoriumRed, 1), new Object[]{ih.cloneStack(XyItems.XychoriditeRed)});
+		reg.addShapelessRecipe(ih.cloneStack(XyItems.XychoriumDark, 1), new Object[]{ih.cloneStack(XyItems.XychoriditeDark)});
+		reg.addShapelessRecipe(ih.cloneStack(XyItems.XychoriumLight, 1), new Object[]{ih.cloneStack(XyItems.XychoriditeLight)});
+		
+		reg.addRecipe(new ItemStack(XyBlocks.XyBlockBlue, 1), new Object[]{"XXX", "XXX", "XXX", 'X', ih.cloneStack(XyItems.XychoriumBlue)});
+		reg.addRecipe(new ItemStack(XyBlocks.XyBlockGreen, 1), new Object[]{"XXX", "XXX", "XXX", 'X', ih.cloneStack(XyItems.XychoriumGreen)});
+		reg.addRecipe(new ItemStack(XyBlocks.XyBlockRed, 1), new Object[]{"XXX", "XXX", "XXX", 'X', ih.cloneStack(XyItems.XychoriumRed)});
+		reg.addRecipe(new ItemStack(XyBlocks.XyBlockDark, 1), new Object[]{"XXX", "XXX", "XXX", 'X', ih.cloneStack(XyItems.XychoriumDark)});
+		reg.addRecipe(new ItemStack(XyBlocks.XyBlockLight, 1), new Object[]{"XXX", "XXX", "XXX", 'X', ih.cloneStack(XyItems.XychoriumLight)});
+		ih.addShapelessRecipe(ih.cloneStack(XyItems.XychoriumBlue, 9), new Object[]{XyBlocks.XyBlockBlue});
+		ih.addShapelessRecipe(ih.cloneStack(XyItems.XychoriumGreen, 9), new Object[]{XyBlocks.XyBlockGreen});
+		ih.addShapelessRecipe(ih.cloneStack(XyItems.XychoriumRed, 9), new Object[]{XyBlocks.XyBlockRed});
+		ih.addShapelessRecipe(ih.cloneStack(XyItems.XychoriumDark, 9), new Object[]{XyBlocks.XyBlockDark});
+		ih.addShapelessRecipe(ih.cloneStack(XyItems.XychoriumLight, 9), new Object[]{XyBlocks.XyBlockLight});
+		
+		reg.addRecipe(new ItemStack(XyBlocks.XyBrickBlue, 5), new Object[]{"XCX", "CCC", "XCX", 'C', Blocks.stonebrick, 'X', ih.cloneStack(XyItems.XychoriditeBlue)});
+		reg.addRecipe(new ItemStack(XyBlocks.XyBrickGreen, 5), new Object[]{"XCX", "CCC", "XCX", 'C', Blocks.stonebrick, 'X', ih.cloneStack(XyItems.XychoriditeGreen)});
+		reg.addRecipe(new ItemStack(XyBlocks.XyBrickRed, 5), new Object[]{"XCX", "CCC", "XCX", 'C', Blocks.stonebrick, 'X', ih.cloneStack(XyItems.XychoriditeRed)});
+		reg.addRecipe(new ItemStack(XyBlocks.XyBrickDark, 5), new Object[]{"XCX", "CCC", "XCX", 'C', Blocks.stonebrick, 'X', ih.cloneStack(XyItems.XychoriditeDark)});
+		reg.addRecipe(new ItemStack(XyBlocks.XyBrickLight, 5), new Object[]{"XCX", "CCC", "XCX", 'C', Blocks.stonebrick, 'X', ih.cloneStack(XyItems.XychoriditeLight)});
+		
+		reg.addRecipe(new ItemStack(XyBlocks.XyStBlack, 4), new Object[]{"XCX", "CCC", "XCX", 'C', Blocks.brick_block
+	}
+
+}

@@ -1,0 +1,16 @@
+[
+{
+  "modid": "XyCraft",
+  "name": "§3XyCraft",
+  "description": "Unofficial XyCraft Version.",
+  "version": "0.13.0",
+  "mcversion": "1.7.10",
+  "url": "",
+  "updateUrl": "",
+  "authorList": ["KitsuneAlex"],
+  "credits": ">>> HERE COULD BE YOUR NAME <<<",
+  "logoFile": "",
+  "screenshots": [],
+  "dependencies": []
+}
+]

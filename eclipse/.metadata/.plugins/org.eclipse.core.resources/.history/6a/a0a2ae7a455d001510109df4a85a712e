@@ -1,0 +1,37 @@
+package com.foxy.xycraft.block.machine;
+
+import com.foxy.xycraft.XyCraft;
+import com.foxy.xycraft.XyTabs;
+
+import cpw.mods.fml.relauncher.Side;
+import cpw.mods.fml.relauncher.SideOnly;
+import net.minecraft.block.Block;
+import net.minecraft.block.BlockGlass;
+import net.minecraft.block.material.Material;
+import net.minecraft.client.renderer.texture.IIconRegister;
+import net.minecraft.util.IIcon;
+import net.minecraft.world.IBlockAccess;
+import net.minecraft.block.BlockGlass;
+
+public class GlassViewer extends CustomCTBlock {
+
+	public GlassViewer(String blockName, Material material, String path, String modId) {
+		super(material, path, modId);
+		this.setBlockName(blockName);
+		this.setCreativeTab(XyTabs.tabXMachines);
+		this.setHardness(1.0F);
+		this.setStepSound(Block.soundTypeGlass);
+	}
+	
+    @SideOnly(Side.CLIENT)
+    public int getRenderBlockPass()
+    {
+        return 0;
+    }
+	
+	@Override
+    public boolean connectionAllowed(IBlockAccess world, int x, int y, int z, int side) {
+        return true;
+    }
+
+}

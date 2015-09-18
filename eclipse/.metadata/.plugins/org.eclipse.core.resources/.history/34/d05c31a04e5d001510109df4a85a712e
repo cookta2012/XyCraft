@@ -1,0 +1,17 @@
+package com.foxy.xycraft.block.machine;
+
+import com.foxy.xycraft.block.XyBaseBlock;
+
+import net.minecraft.block.Block;
+import net.minecraft.block.material.Material;
+
+public class XychoriumWater extends XyBaseBlock {
+
+	public XychoriumWater(String blockName, Material material, String subFolder) {
+		super(material);
+		this.setBlockName(blockName);
+		this.setStepSound(Block.soundTypeMetal);
+		this.setHardness(1.5F);
+	}
+
+}

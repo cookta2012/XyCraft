@@ -1,0 +1,16 @@
+
+FAILURE: Build failed with an exception.
+
+* Where:
+Build file 'C:\Users\Kitsune Alex\Documents\GitHub\XyCraft\build.gradle' line: 18
+
+* What went wrong:
+A problem occurred evaluating root project 'XyCraft'.
+> com.google.gson.stream.MalformedJsonException: Unterminated string at line 4281 column 28
+
+* Try:
+Run with --stacktrace option to get the stack trace. Run with --info or --debug option to get more log output.
+
+BUILD FAILED
+
+Total time: 18 mins 56.072 secs

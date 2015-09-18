@@ -1,0 +1,37 @@
+2015-09-10 20:03:35,301 [Worker-42] ERROR o.e.r.s.GitSnippetRepository - Transport operation failed.
+org.eclipse.jgit.api.errors.TransportException: http://git.eclipse.org/gitroot/recommenders/org.eclipse.recommenders.snipmatch.snippets.git: cannot open git-upload-pack
+	at org.eclipse.jgit.api.FetchCommand.call(FetchCommand.java:139) ~[org.eclipse.jgit_4.0.0.201506090130-r.jar:4.0.0.201506090130-r]
+	at org.eclipse.recommenders.snipmatch.GitSnippetRepository.fetch(GitSnippetRepository.java:189) ~[org.eclipse.recommenders.snipmatch_2.2.0.v20150609-1848.jar:na]
+	at org.eclipse.recommenders.snipmatch.GitSnippetRepository.open(GitSnippetRepository.java:84) ~[org.eclipse.recommenders.snipmatch_2.2.0.v20150609-1848.jar:na]
+	at org.eclipse.recommenders.internal.snipmatch.rcp.EclipseGitSnippetRepository$2.run(EclipseGitSnippetRepository.java:170) [org.eclipse.recommenders.snipmatch.rcp_2.2.0.v20150609-1848.jar:na]
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:55) [org.eclipse.core.jobs_3.7.0.v20150330-2103.jar:na]
+Caused by: org.eclipse.jgit.errors.TransportException: http://git.eclipse.org/gitroot/recommenders/org.eclipse.recommenders.snipmatch.snippets.git: cannot open git-upload-pack
+	at org.eclipse.jgit.transport.TransportHttp.connect(TransportHttp.java:518) ~[org.eclipse.jgit_4.0.0.201506090130-r.jar:4.0.0.201506090130-r]
+	at org.eclipse.jgit.transport.TransportHttp.openFetch(TransportHttp.java:296) ~[org.eclipse.jgit_4.0.0.201506090130-r.jar:4.0.0.201506090130-r]
+	at org.eclipse.jgit.transport.FetchProcess.executeImp(FetchProcess.java:136) ~[org.eclipse.jgit_4.0.0.201506090130-r.jar:4.0.0.201506090130-r]
+	at org.eclipse.jgit.transport.FetchProcess.execute(FetchProcess.java:122) ~[org.eclipse.jgit_4.0.0.201506090130-r.jar:4.0.0.201506090130-r]
+	at org.eclipse.jgit.transport.Transport.fetch(Transport.java:1138) ~[org.eclipse.jgit_4.0.0.201506090130-r.jar:4.0.0.201506090130-r]
+	at org.eclipse.jgit.api.FetchCommand.call(FetchCommand.java:130) ~[org.eclipse.jgit_4.0.0.201506090130-r.jar:4.0.0.201506090130-r]
+	... 4 common frames omitted
+Caused by: java.net.UnknownHostException: git.eclipse.org
+	at java.net.AbstractPlainSocketImpl.connect(Unknown Source) ~[na:1.8.0_51]
+	at java.net.PlainSocketImpl.connect(Unknown Source) ~[na:1.8.0_51]
+	at java.net.SocksSocketImpl.connect(Unknown Source) ~[na:1.8.0_51]
+	at java.net.Socket.connect(Unknown Source) ~[na:1.8.0_51]
+	at sun.net.NetworkClient.doConnect(Unknown Source) ~[na:1.8.0_51]
+	at sun.net.www.http.HttpClient.openServer(Unknown Source) ~[na:1.8.0_51]
+	at sun.net.www.http.HttpClient.openServer(Unknown Source) ~[na:1.8.0_51]
+	at sun.net.www.http.HttpClient.<init>(Unknown Source) ~[na:1.8.0_51]
+	at sun.net.www.http.HttpClient.New(Unknown Source) ~[na:1.8.0_51]
+	at sun.net.www.http.HttpClient.New(Unknown Source) ~[na:1.8.0_51]
+	at sun.net.www.protocol.http.HttpURLConnection.getNewHttpClient(Unknown Source) ~[na:1.8.0_51]
+	at sun.net.www.protocol.http.HttpURLConnection.plainConnect0(Unknown Source) ~[na:1.8.0_51]
+	at sun.net.www.protocol.http.HttpURLConnection.plainConnect(Unknown Source) ~[na:1.8.0_51]
+	at sun.net.www.protocol.http.HttpURLConnection.connect(Unknown Source) ~[na:1.8.0_51]
+	at sun.net.www.protocol.http.HttpURLConnection.getInputStream0(Unknown Source) ~[na:1.8.0_51]
+	at sun.net.www.protocol.http.HttpURLConnection.getInputStream(Unknown Source) ~[na:1.8.0_51]
+	at java.net.HttpURLConnection.getResponseCode(Unknown Source) ~[na:1.8.0_51]
+	at org.eclipse.jgit.transport.http.JDKHttpConnection.getResponseCode(JDKHttpConnection.java:98) ~[org.eclipse.jgit_4.0.0.201506090130-r.jar:4.0.0.201506090130-r]
+	at org.eclipse.jgit.util.HttpSupport.response(HttpSupport.java:174) ~[org.eclipse.jgit_4.0.0.201506090130-r.jar:4.0.0.201506090130-r]
+	at org.eclipse.jgit.transport.TransportHttp.connect(TransportHttp.java:469) ~[org.eclipse.jgit_4.0.0.201506090130-r.jar:4.0.0.201506090130-r]
+	... 9 common frames omitted

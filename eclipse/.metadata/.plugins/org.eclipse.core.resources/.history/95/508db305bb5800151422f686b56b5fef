@@ -1,0 +1,79 @@
+package com.foxy.xycraft.block;
+
+import java.util.Random;
+
+import com.foxy.xycraft.XyCraft;
+import com.foxy.xycraft.XyTabs;
+import com.foxy.xycraft.item.XyItems;
+
+import cofh.lib.util.helpers.ItemHelper;
+import cpw.mods.fml.relauncher.Side;
+import cpw.mods.fml.relauncher.SideOnly;
+import net.minecraft.block.Block;
+import net.minecraft.block.material.Material;
+import net.minecraft.client.renderer.texture.IIconRegister;
+import net.minecraft.init.Blocks;
+import net.minecraft.init.Items;
+import net.minecraft.item.Item;
+import net.minecraft.item.ItemStack;
+import net.minecraft.util.IIcon;
+import net.minecraft.world.IBlockAccess;
+import net.minecraft.world.World;
+import net.minecraftforge.common.util.ForgeDirection;
+import net.minecraft.block.BlockOre;
+
+import net.minecraft.block.BlockRedstoneOre;
+
+public class XychoriumOre extends XyBaseBlock {
+	
+	public static Object itemDropTr;
+	public static ItemStack itemDrop = (ItemStack) itemDropTr;
+
+	public XychoriumOre(String blockName, Object itemDropped) {
+		super(Material.rock);
+		this.itemDropTr = itemDropped;
+		this.setBlockName(blockName);
+		this.setCreativeTab(XyTabs.tabXBlocks);
+		this.setHardness(2.5F);
+		this.setStepSound(Block.soundTypeStone);
+	}
+	
+	@SideOnly(Side.CLIENT)
+    private IIcon icon[];
+	
+	@Override
+    @SideOnly(Side.CLIENT)
+    public void registerBlockIcons(IIconRegister iconRegister) {
+        icon = new IIcon[2];
+        icon[0] = iconRegister.registerIcon(XyCraft.INSTANCE + ":" + "material/" + "XyOre");
+        icon[1] = iconRegister.registerIcon(XyCraft.INSTANCE + ":" + "fx/" + "XyOreFX");
+    }
+	
+	@Override
+    @SideOnly(Side.CLIENT)
+    public IIcon getIcon(int side, int meta) {
+        if (side < 6)
+            return icon[0];
+        else
+            return icon[1];
+    }
+	
+	@Override
+    public boolean canPlaceTorchOnTop(World world, int x, int y, int z) {
+        return false;
+    }
+	
+	@Override
+    public boolean isSideSolid(IBlockAccess world, int x, int y, int z, ForgeDirection side) {
+        return false;
+    }
+	
+	//Block Modifier Stuff
+	
+	@Override
+	 public Item getItemDropped(int p_149650_1_, Random p_149650_2_, int p_149650_3_)
+	 {
+	     return this == Blocks.coal_ore ? Items.coal : (this == Blocks.diamond_ore ? Items.diamond : (this == Blocks.lapis_ore ? Items.dye : (this == Blocks.emerald_ore ? Items.emerald : (this == Blocks.quartz_ore ? Items.quartz : Item.getItemFromBlock(this)))));
+	 }
+
+}

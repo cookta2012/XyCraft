@@ -1,0 +1,19 @@
+package com.foxy.xycraft.block.machine;
+
+import com.foxy.xycraft.XyTabs;
+import com.foxy.xycraft.block.XyBaseBlock;
+
+import net.minecraft.block.Block;
+import net.minecraft.block.material.Material;
+
+public class XychoriumSoil extends XyBaseBlock {
+
+	public XychoriumSoil(String blockName) {
+		super(Material.gourd);
+		this.setBlockName(blockName);
+		this.setCreativeTab(XyTabs.tabXMachines);
+		this.setHardness(1.5F);
+		this.setStepSound(Block.soundTypeMetal);
+	}
+
+}

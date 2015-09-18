@@ -1,0 +1,38 @@
+package com.foxy.xycraft.item;
+
+import net.minecraft.item.Item;
+import net.minecraft.item.ItemStack;
+import cofh.core.item.ItemBase;
+import cofh.lib.util.helpers.ItemHelper;
+import cpw.mods.fml.common.registry.GameRegistry;
+
+import com.foxy.xycraft.XyCraft;
+import com.foxy.xycraft.XyTabs;
+
+public class XyItems {
+
+	public static Item XychoriumBlue;
+	public static Item XychoriumGreen;
+	public static Item XychoriumRed;
+	public static Item XychoriumDark;
+	public static Item XychoriumLight;
+	
+	public static Item XychoriditeBlue;
+	public static Item XychoriditeGreen;
+	public static Item XychoriditeRed;
+	public static Item XychoriditeDark;
+	public static Item XychoriditeLight;
+	
+	public static Item SeedCorn;
+	public static Item Corn;
+	public static Item CobOCorn;
+	public static Item PopCorn;
+	
+	public static void preInit(){
+		GameRegistry reg = null;
+		ItemHelper ih = null;
+		
+		reg.registerItem(XychoriumBlue = (new XyBaseItem(XyCraft.INSTANCE, "XychoriumBlue", "material"), "XychoriumBlue");
+	}
+
+}

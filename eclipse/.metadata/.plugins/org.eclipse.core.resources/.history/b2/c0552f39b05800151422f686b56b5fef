@@ -1,0 +1,9 @@
+package com.foxy.xycraft.block.machine;
+
+public class XyMachines {
+	
+	public static void preInit(){
+		
+	}
+
+}

@@ -1,0 +1,114 @@
+itemGroup.tabXItems=XyCraft Items
+itemGroup.tabXBlocks=XyCraft Blocks
+itemGroup.tabXMachines=XyCraft Engineering
+
+item.XychoriumBlue.name=Blue Xychorium
+item.XychoriumGreen.name=Green Xychorium
+item.XychoriumRed.name=Red Xychorium
+item.XychoriumDark.name=Dark Xychorium
+item.XychoriumLight.name=Light Xychorium
+item.XychoriditeBlue.name=Blue Xychoridite Ingot
+item.XychoriditeGreen.name=Green Xychoridite Ingot
+item.XychoriditeRed.name=Red Xychoridite Ingot
+item.XychoriditeDark.name=Dark Xychoridite Ingot
+item.XychoriditeLight.name=Light Xychoridite Ingot
+
+tile.XyBlockBlue.name=Blue Xychorium Block
+tile.XyBlockGreen.name=Green Xychorium Block
+tile.XyBlockRed.name=Red Xychorium Block
+tile.XyBlockDark.name=Dark Xychorium Block
+tile.XyBlockLight.name=Light Xychorium Block
+
+tile.XyBrickBlue.name=Blue Xychorium Brick
+tile.XyBrickGreen.name=Green Xychorium Brick
+tile.XyBrickRed.name=Red Xychorium Brick
+tile.XyBrickDark.name=Dark Xychorium Brick
+tile.XyBrickLight.name=Light Xychorium Brick
+
+tile.XyOreBlue.name=Blue Xychorium Ore
+tile.XyOreGreen.name=Green Xychorium Ore
+tile.XyOreRed.name=Red Xychorium Ore
+tile.XyOreDark.name=Dark Xychorium Ore
+tile.XyOreLight.name=Light Xychorium Ore
+
+tile.XyStBlack.name=Black Xychorium Structure
+tile.XyStRed.name=Red Xychorium Structure
+tile.XyStGreen.name=Green Xychorium Structure
+tile.XyStBrown.name=Brown Xychorium Structure
+tile.XyStBlue.name=Blue Xychorium Structure
+tile.XyStPurple.name=Purple Xychorium Structure
+tile.XyStCyan.name=Cyan Xychorium Structure
+tile.XyStLightGray.name=Light Gray Xychorium Structure
+tile.XyStGray.name=Gray Xychorium Structure
+tile.XyStPink.name=Pink Xychorium Structure
+tile.XyStLime.name=Lime Xychorium Structure
+tile.XyStYellow.name=Yellow Xychorium Structure
+tile.XyStLightBlue.name=Light Blue Xychorium Structure 
+tile.XyStMagenta.name=Magenta Xychorium Structure
+tile.XyStOrange.name=Orange Xychorium Structure
+tile.XyStWhite.name=White Xychorium Structure
+
+tile.XyPlateBlack.name=Black Xychorium Plate
+tile.XyPlateRed.name=Red Xychorium Plate
+tile.XyPlateGreen.name=Green Xychorium Plate
+tile.XyPlateBrown.name=Brown Xychorium Plate
+tile.XyPlateBlue.name=Blue Xychorium Plate
+tile.XyPlatePurple.name=Purple Xychorium Plate
+tile.XyPlateCyan.name=Cyan Xychorium Plate
+tile.XyPlateLightGray.name=Light Gray Xychorium Plate
+tile.XyPlateGray.name=Gray Xychorium Plate
+tile.XyPlatePink.name=Pink Xychorium Plate
+tile.XyPlateLime.name=Lime Xychorium Plate
+tile.XyPlateYellow.name=Yellow Xychorium Plate
+tile.XyPlateLightBlue.name=Light Blue Xychorium Plate
+tile.XyPlateMagenta.name=Magenta Xychorium Plate
+tile.XyPlateOrange.name=Orange Xychorium Plate
+tile.XyPlateWhite.name=White Xychorium Plate
+
+tile.XyShieldBlack.name=Black Xychorium Shield
+tile.XyShieldRed.name=Red Xychorium Shield
+tile.XyShieldGreen.name=Green Xychorium Shield
+tile.XyShieldBrown.name=Brown Xychorium Shield
+tile.XyShieldBlue.name=Blue Xychorium Shield
+tile.XyShieldPurple.name=Purple Xychorium Shield
+tile.XyShieldCyan.name=Cyan Xychorium Shield
+tile.XyShieldLightGray.name=Light Gray Xychorium Shield
+tile.XyShieldGray.name=Gray Xychorium Shield
+tile.XyShieldPink.name=Pink Xychorium Shield
+tile.XyShieldLime.name=Lime Xychorium Shield
+tile.XyShieldYellow.name=Yellow Xychorium Shield
+tile.XyShieldLightBlue.name=Light Blue Xychorium Shield
+tile.XyShieldMagenta.name=Magenta Xychorium Shield
+tile.XyShieldOrange.name=Orange Xychorium Shield
+tile.XyShieldWhite.name=White Xychorium Shield
+
+tile.XyPlatformBlack.name=Black Xychorium Platform
+tile.XyPlatformRed.name=Red Xychorium Platform
+tile.XyPlatformGreen.name=Green Xychorium Platform
+tile.XyPlatformBrown.name=Brown Xychorium Platform
+tile.XyPlatformBlue.name=Blue Xychorium Platform
+tile.XyPlatformPurple.name=Purple Xychorium Platform
+tile.XyPlatformCyan.name=Cyan Xychorium Platform
+tile.XyPlatformLightGray.name=Light Gray Xychorium Platform
+tile.XyPlatformGray.name=Gray Xychorium Platform
+tile.XyPlatformPink.name=Pink Xychorium Platform
+tile.XyPlatformLime.name=Lime Xychorium Platform
+tile.XyPlatformYellow.name=Yellow Xychorium Platform
+tile.XyPlatformLightBlue.name=Light Blue Xychorium Platform
+tile.XyPlatformMagenta.name=Magenta Xychorium Platform
+tile.XyPlatformOrange.name=Orange Xychorium Platform
+tile.XyPlatformWhite.name=White Xychorium Platform
+
+tile.EngineeringBlockBlue.name=Blue Engineering Block
+tile.EngineeringBlockGreen.name=Green Engineering Block
+tile.EngineeringBlockRed.name=Red Engineering Block
+tile.EngineeringBlockDark.name=Dark Engineering Block
+tile.EngineeringBlockLight.name=Light Engineering Block
+
+tile.GlassViewer.name=Glass Viewer
+
+tile.XychoriumWater.name=Xychorium Water
+tile.XychoriumSoil.name=Xychorium Soil [WIP]
+tile.XychoriumFire.name=Xychorium Fire [WIP]
+tile.XychoriumVoid.name=Xychorium Liquid Void [WIP]
+tile.XychoriumIce.name=Xychorium Ice [WIP]

@@ -1,0 +1,33 @@
+package com.foxy.xycraft.block;
+
+import cpw.mods.fml.common.registry.GameRegistry;
+import net.minecraft.block.Block;
+import net.minecraft.block.material.Material;
+
+public class XyBlocks {
+	
+	public static int countBlocks = 5;
+	
+	public static Block XyBlockBlue;
+	public static Block XyBlockGreen;
+	public static Block XyBlockRed;
+	public static Block XyBlockDark;
+	public static Block XyBlockLight;
+	
+	public static Block XyOreBlue;
+	public static Block XyOreGreen;
+	public static Block XyOreRed;
+	public static Block XyOreDark;
+	public static Block XyOreLight;
+	
+	public static void preInit(){
+		GameRegistry reg = null;
+		
+		reg.registerBlock(XyBlockBlue = (new XychoriumBlock("XyBlockBlue")), "XyBlockBlue");
+		reg.registerBlock(XyBlockGreen = (new XychoriumBlock("XyBlockGreen")), "XyBlockGreen");
+		reg.registerBlock(XyBlockRed = (new XychoriumBlock("XyBlockRed")), "XyBlockRed");
+		reg.registerBlock(XyBlockDark = (new XychoriumBlock("XyBlockDark")), "XyBlockDark");
+		reg.registerBlock(XyBlockLight = (new XychoriumBlock("XyBlockLight")), "XyBlockLight");
+	}
+
+}

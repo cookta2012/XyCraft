@@ -1,0 +1,19 @@
+package com.foxy.xycraft.block;
+
+import com.foxy.xycraft.XyTabs;
+
+import net.minecraft.block.Block;
+import net.minecraft.block.BlockGlass;
+import net.minecraft.block.material.Material;
+
+public class GlassViewer extends BlockGlass {
+
+	public GlassViewer(String blockName, Material mat, boolean boo) {
+		super(mat, boo);
+		this.setBlockName(blockName);
+		this.setCreativeTab(XyTabs.tabXMachines);
+		this.setHardness(2.0F);
+		this.setStepSound(Block.soundTypeGlass);
+	}
+
+}

@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<qualifiedTypeNameHistroy>
+<fullyQualifiedTypeName name="com.foxy.xycraft.block.XychoriumBlock"/>
+<fullyQualifiedTypeName name="cpw.mods.fml.common.IWorldGenerator"/>
+<fullyQualifiedTypeName name="net.minecraft.world.World"/>
+<fullyQualifiedTypeName name="net.minecraft.world.chunk.IChunkProvider"/>
+<fullyQualifiedTypeName name="net.minecraft.world.gen.feature.WorldGenMinable"/>
+<fullyQualifiedTypeName name="com.foxy.xycraft.handler.SmeltingHandler"/>
+<fullyQualifiedTypeName name="net.minecraft.item.ItemStack"/>
+<fullyQualifiedTypeName name="net.minecraft.init.Blocks"/>
+<fullyQualifiedTypeName name="net.minecraft.block.BlockGlass"/>
+<fullyQualifiedTypeName name="com.foxy.xycraft.util.BlockCounter"/>
+<fullyQualifiedTypeName name="com.foxy.xycraft.render.RenderRegistry"/>
+<fullyQualifiedTypeName name="net.minecraft.init.Items"/>
+<fullyQualifiedTypeName name="net.minecraft.world.IBlockAccess"/>
+<fullyQualifiedTypeName name="com.foxy.xycraft.block.XyBlocks"/>
+<fullyQualifiedTypeName name="com.foxy.xycraft.item.XyItems"/>
+<fullyQualifiedTypeName name="net.minecraft.item.Item"/>
+<fullyQualifiedTypeName name="cpw.mods.fml.common.registry.GameRegistry"/>
+<fullyQualifiedTypeName name="cofh.lib.util.helpers.ItemHelper"/>
+<fullyQualifiedTypeName name="com.foxy.xycraft.XyCraft"/>
+<fullyQualifiedTypeName name="java.util.Random"/>
+<fullyQualifiedTypeName name="com.foxy.xycraft.block.machine.XyMachines"/>
+<fullyQualifiedTypeName name="net.minecraft.block.BlockFurnace"/>
+<fullyQualifiedTypeName name="net.minecraft.block.BlockWorkbench"/>
+<fullyQualifiedTypeName name="net.minecraft.block.BlockBookshelf"/>
+<fullyQualifiedTypeName name="com.foxy.xycraft.block.XyBaseBlock"/>
+<fullyQualifiedTypeName name="com.foxy.xycraft.XyTabs"/>
+<fullyQualifiedTypeName name="net.minecraft.block.Block"/>
+</qualifiedTypeNameHistroy>
