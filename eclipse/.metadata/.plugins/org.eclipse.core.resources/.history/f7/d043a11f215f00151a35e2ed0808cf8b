@@ -1,0 +1,5 @@
+package com.foxy.xycraft.compat.provider;
+
+public class XyBodyProvider {
+
+}

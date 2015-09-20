@@ -9,6 +9,7 @@ import cpw.mods.fml.relauncher.SideOnly;
 import net.minecraft.block.Block;
 import net.minecraft.block.material.Material;
 import net.minecraft.client.renderer.texture.IIconRegister;
+import net.minecraft.init.Blocks;
 import net.minecraft.util.IIcon;
 import net.minecraft.world.IBlockAccess;
 import net.minecraft.world.World;
@@ -54,14 +55,17 @@ public class XychoriumIce extends XyBaseBlock {
 		return icon[side];
     }
 	
-	@Override
-    public boolean canPlaceTorchOnTop(World world, int x, int y, int z) {
-        return false;
-    }
+	public void iceWater(World world, int x, int y, int z, ForgeDirection dir) {
+		if (world.getBlock(x + dir.offsetX, y + dir.offsetY, z + dir.offsetZ).getMaterial() == Material.water) {
+			world.setBlock(x + dir.offsetX, y + dir.offsetY, z + dir.offsetZ, Blocks.ice);
+		}
+	}
 	
 	@Override
-    public boolean isSideSolid(IBlockAccess world, int x, int y, int z, ForgeDirection side) {
-        return false;
-    }
+	public void onBlockAdded(World world, int x, int y, int z) {
+		for (ForgeDirection dir : ForgeDirection.VALID_DIRECTIONS) {
+			iceWater(world, x, y, z, dir);
+		}
+	}
 
 }

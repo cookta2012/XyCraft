@@ -1,0 +1,59 @@
+package com.foxy.xycraft.block.machine;
+
+import com.foxy.xycraft.XyCraft;
+import com.foxy.xycraft.XyTabs;
+import com.foxy.xycraft.render.RenderRegistry;
+
+import cpw.mods.fml.relauncher.Side;
+import cpw.mods.fml.relauncher.SideOnly;
+import net.minecraft.block.Block;
+import net.minecraft.block.BlockFarmland;
+import net.minecraft.block.material.Material;
+
+public class XyFarmHelper extends BlockFarmland {
+	
+	public int idBlock;
+	
+	public XyFarmHelper(String blockName){
+		super();
+		this.setBlockName(blockName);
+		this.setTickRandomly(true);
+		this.setCreativeTab(XyTabs.tabXMachines);
+		this.setHardness(1.5F);
+		this.setStepSound(Block.soundTypeMetal);
+        idBlock = XyCraft.idCounter;
+        XyCraft.idCounter++;
+	}
+	
+	@Override
+    @SideOnly(Side.CLIENT)
+    public boolean renderAsNormalBlock() {
+        return false;
+    }
+    
+    @Override
+    @SideOnly(Side.CLIENT)
+    public int getRenderType() {
+        return RenderRegistry.renderID[idBlock];
+    }
+
+    @Override
+    @SideOnly(Side.CLIENT)
+    public boolean canRenderInPass(int pass) {
+        RenderRegistry.renderPass[idBlock] = pass;
+        return true;
+    }
+
+    @Override
+    @SideOnly(Side.CLIENT)
+    public int getRenderBlockPass() {
+        return 1;
+    }
+
+    @Override
+    @SideOnly(Side.CLIENT)
+    public boolean isBlockNormalCube() {
+        return true;
+    }
+
+}

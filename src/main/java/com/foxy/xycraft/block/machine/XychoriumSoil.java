@@ -4,6 +4,8 @@ import java.util.Random;
 import com.foxy.xycraft.XyCraft;
 import com.foxy.xycraft.XyTabs;
 import com.foxy.xycraft.block.XyBaseBlock;
+import com.foxy.xycraft.render.RenderRegistry;
+
 import cpw.mods.fml.relauncher.Side;
 import cpw.mods.fml.relauncher.SideOnly;
 import net.minecraft.block.Block;
@@ -15,11 +17,16 @@ import net.minecraft.world.IBlockAccess;
 import net.minecraft.world.World;
 import net.minecraftforge.common.IPlantable;
 import net.minecraftforge.common.util.ForgeDirection;
+import net.minecraft.block.BlockFarmland;
+import net.minecraft.block.IGrowable;
 
 public class XychoriumSoil extends XyBaseBlock {
+	
+	public int idBlock;
 
 	public XychoriumSoil(String blockName) {
 		super(Material.ground);
+		this.setTickRandomly(true);
 		this.setBlockName(blockName);
 		this.setCreativeTab(XyTabs.tabXMachines);
 		this.setHardness(1.5F);
@@ -55,5 +62,39 @@ public class XychoriumSoil extends XyBaseBlock {
 		
 		return icon[side];
     }
+	
+	@Override
+	public int tickRate(World p_149738_1_) {
+		return 30;
+	}
+	
+	@Override
+	public boolean canSustainPlant(IBlockAccess world, int x, int y, int z, ForgeDirection direction, IPlantable plantable) {
+		return true;
+	}
+	
+	public int countBlocks(World world, int x, int y, int z) {
+		int count = 0;
+		for (int i = 0; i < 10; i++) {
+			if (world.getBlock(x, y - i, z) == this) {
+				count++;
+			}
+		}
+		return count;
+	}
+	
+	@Override
+	public void updateTick(World world, int x, int y, int z, Random rand) {
+		if (rand.nextInt(11 - countBlocks(world, x, y, z)) == 0)
+			if (world.getBlock(x, y + 1, z) instanceof IGrowable) {
+				((IGrowable) world.getBlock(x, y + 1, z)).func_149853_b(world, rand, x, y + 1, z);
+
+			}
+	}
+	
+	@Override
+	public boolean isFertile(World world, int x, int y, int z) {
+		return true;
+	}
 
 }

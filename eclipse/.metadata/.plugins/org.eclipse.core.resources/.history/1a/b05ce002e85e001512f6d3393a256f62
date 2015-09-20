@@ -1,0 +1,17 @@
+package com.foxy.xycraft.util;
+
+public class ForgeHooks {
+	
+	public static void preInit(){
+		
+	}
+	
+	public static void init(){
+		
+	}
+	
+	public static void postInit(){
+		
+	}
+
+}

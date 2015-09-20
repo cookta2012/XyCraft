@@ -1,0 +1,27 @@
+package com.foxy.xycraft.block;
+
+import cpw.mods.fml.relauncher.Side;
+import net.minecraft.block.Block;
+import net.minecraft.block.BlockBush;
+import net.minecraft.block.IGrowable;
+import net.minecraft.creativetab.CreativeTabs;
+
+public class XyCrop extends BlockBush implements IGrowable {
+	
+	public XyCrop(String blockName){
+		this.setBlockName(blockName);
+		this.setTickRandomly(true);
+		this.setBlockBounds(0.0F, 0.0F, 0.0F, 1.0F, 0.25F, 1.0F);
+		this.setCreativeTab((CreativeTabs)null);
+		this.setHardness(0.0F);
+		this.setStepSound(Block.soundTypeGrass);
+		this.disableStats();
+	}
+	
+	@Override
+	@SideOnly(Side.CLIENT)
+	public int getRenderType(){
+		return 6;
+	}
+
+}

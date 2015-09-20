@@ -1,0 +1,11 @@
+package com.foxy.xycraft.compat.thaumcraft;
+
+import thaumcraft.api.ThaumcraftApi;
+
+public class AspectHandler {
+	
+	public static void registerAspects(ThaumcraftApi aspect){
+		
+	}
+
+}

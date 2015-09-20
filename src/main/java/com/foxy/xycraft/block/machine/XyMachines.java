@@ -1,8 +1,6 @@
 package com.foxy.xycraft.block.machine;
 
 import com.foxy.xycraft.XyCraft;
-
-import cofh.lib.util.helpers.ItemHelper;
 import cpw.mods.fml.common.registry.GameRegistry;
 import net.minecraft.block.Block;
 import net.minecraft.block.material.Material;
@@ -23,9 +21,25 @@ public class XyMachines {
 	public static Block XychoriumVoid;
 	public static Block XychoriumIce;
 	
+	public static Block LampBlack;
+	public static Block LampRed;
+	public static Block LampGreen;
+	public static Block LampBrown;
+	public static Block LampBlue;
+	public static Block LampPurple;
+	public static Block LampCyan;
+	public static Block LampLightGray;
+	public static Block LampGray;
+	public static Block LampPink;
+	public static Block LampLime;
+	public static Block LampYellow;
+	public static Block LampLightBlue;
+	public static Block LampMagenta;
+	public static Block LampOrange;
+	public static Block LampWhite;
+	
 	public static void preInit(){
 		GameRegistry reg = null;
-		ItemHelper ih = null;
 		
 		reg.registerBlock(EngineeringBlockBlue = (new EngineeringBlock("EngineeringBlockBlue")), "EngineeringBlockBlue");
 		reg.registerBlock(EngineeringBlockGreen = (new EngineeringBlock("EngineeringBlockGreen")), "EngineeringBlockGreen");
@@ -33,13 +47,30 @@ public class XyMachines {
 		reg.registerBlock(EngineeringBlockDark = (new EngineeringBlock("EngineeringBlockDark")), "EngineeringBlockDark");
 		reg.registerBlock(EngineeringBlockLight = (new EngineeringBlock("EngineeringBlockLight")), "EngineeringBlockLight");
 		
-		reg.registerBlock(GlassViewer = (new GlassViewer("GlassViewer")), "GlassViewer");
+		reg.registerBlock(GlassViewer = (new GlassViewer("GlassViewer", true)), "GlassViewer");
 		
 		reg.registerBlock(XychoriumWater = (new XychoriumWater("XychoriumWater")), "XychoriumWater");
 		reg.registerBlock(XychoriumSoil = (new XychoriumSoil("XychoriumSoil")), "XychoriumSoil");
 		reg.registerBlock(XychoriumFire = (new XychoriumFire("XychoriumFire")), "XychoriumFire");
 		reg.registerBlock(XychoriumVoid = (new XychoriumVoid("XychoriumVoid")), "XychoriumVoid");
 		reg.registerBlock(XychoriumIce = (new XychoriumIce("XychoriumIce")), "XychoriumIce");
+		
+		reg.registerBlock(LampBlack = (new XychoriumLamp("LampBlack")), "LampBlack");
+		reg.registerBlock(LampRed = (new XychoriumLamp("LampRed")), "LampRed");
+		reg.registerBlock(LampGreen = (new XychoriumLamp("LampGreen")), "LampGreen");
+		reg.registerBlock(LampBrown = (new XychoriumLamp("LampBrown")), "LampBrown");
+		reg.registerBlock(LampBlue = (new XychoriumLamp("LampBlue")), "LampBlue");
+		reg.registerBlock(LampPurple = (new XychoriumLamp("LampPurple")), "LampPurple");
+		reg.registerBlock(LampCyan = (new XychoriumLamp("LampCyan")), "LampCyan");
+		reg.registerBlock(LampLightGray = (new XychoriumLamp("LampLightGray")), "LampLightGray");
+		reg.registerBlock(LampGray = (new XychoriumLamp("LampGray")), "LampGray");
+		reg.registerBlock(LampPink = (new XychoriumLamp("LampPink")), "LampPink");
+		reg.registerBlock(LampLime = (new XychoriumLamp("LampLime")), "LampLime");
+		reg.registerBlock(LampYellow = (new XychoriumLamp("LampYellow")), "LampYellow");
+		reg.registerBlock(LampLightBlue = (new XychoriumLamp("LampLightBlue")), "LampLightBlue");
+		reg.registerBlock(LampMagenta = (new XychoriumLamp("LampMagenta")), "LampMagenta");
+		reg.registerBlock(LampOrange = (new XychoriumLamp("LampOrange")), "LampOrange");
+		reg.registerBlock(LampWhite = (new XychoriumLamp("LampWhite")), "LampWhite");
 	}
 
 }

@@ -9,6 +9,8 @@ import cpw.mods.fml.relauncher.SideOnly;
 import net.minecraft.block.Block;
 import net.minecraft.block.material.Material;
 import net.minecraft.client.renderer.texture.IIconRegister;
+import net.minecraft.entity.player.EntityPlayer;
+import net.minecraft.init.Blocks;
 import net.minecraft.util.IIcon;
 import net.minecraft.world.IBlockAccess;
 import net.minecraft.world.World;
@@ -56,13 +58,32 @@ public class XychoriumFire extends XyBaseBlock {
     }
 	
 	@Override
-    public boolean canPlaceTorchOnTop(World world, int x, int y, int z) {
-        return false;
-    }
+	public boolean onBlockActivated(World p_149727_1_, int p_149727_2_, int p_149727_3_, int p_149727_4_, EntityPlayer p_149727_5_, int p_149727_6_, float p_149727_7_, float p_149727_8_, float p_149727_9_) {
+
+		return false;
+
+	}
 	
 	@Override
-    public boolean isSideSolid(IBlockAccess world, int x, int y, int z, ForgeDirection side) {
-        return false;
-    }
+	public boolean isFireSource(World world, int x, int y, int z, ForgeDirection side) {
+		return true;
+	}
+	
+	@Override
+	public boolean isNormalCube() {
+		return true;
+	}
+	
+	@Override
+	public void onNeighborBlockChange(World world, int x, int y, int z, Block block) {
+		if (world.isBlockIndirectlyGettingPowered(x, y, z) && world.getBlock(x, y + 1, z).isReplaceable(world, x, y, z)) {
+			world.setBlock(x, y + 1, z, Blocks.fire);
+		}
+	}
+	
+	@Override
+	public boolean isNormalCube(IBlockAccess world, int x, int y, int z) {
+		return true;
+	}
 
 }

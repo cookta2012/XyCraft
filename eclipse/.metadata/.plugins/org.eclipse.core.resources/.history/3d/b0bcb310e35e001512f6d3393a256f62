@@ -1,0 +1,17 @@
+package com.foxy.xycraft.block;
+
+import net.minecraft.block.Block;
+import net.minecraft.item.ItemBlock;
+
+public class ItemBlockXyCrop extends ItemBlock {
+	
+	public ItemBlockXyCrop(Block b){
+		super(b);
+		if(((XyCrop)b).subNames.length > 1){
+			this.setHasSubtypes(true);
+		}
+	}
+	
+
+
+}

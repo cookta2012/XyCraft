@@ -108,7 +108,31 @@ tile.EngineeringBlockLight.name=Light Engineering Block
 tile.GlassViewer.name=Glass Viewer
 
 tile.XychoriumWater.name=Xychorium Water
-tile.XychoriumSoil.name=Xychorium Soil [WIP]
-tile.XychoriumFire.name=Xychorium Fire Basin [WIP]
-tile.XychoriumVoid.name=Xychorium Liquid Void [WIP]
-tile.XychoriumIce.name=Xychorium Ice [WIP]
+tile.XychoriumSoil.name=Xychorium Soil 
+tile.XychoriumFire.name=Xychorium Fire Basin 
+tile.XychoriumVoid.name=Xychorium Liquid Void 
+tile.XychoriumIce.name=Xychorium Ice
+
+item.SeedCorn.name=Corn Seeds
+item.Corn.name=Corn
+item.CobOCorn.name=Cob 'o Corn
+item.PopCorn.name=Popcorn
+
+tile.CropCorn.name=Corn Crop
+
+tile.LampBlack.name=Black Xychorium Lamp
+tile.LampRed.name=Red Xychorium Lamp
+tile.LampGreen.name=Green Xychorium Lamp
+tile.LampBrown.name=Brown Xychorium Lamp
+tile.LampBlue.name=Blue Xychorium Lamp
+tile.LampPurple.name=Purple Xychorium Lamp
+tile.LampCyan.name=Cyan Xychorium Lamp
+tile.LampLightGray.name=Light Gray Xychorium Lamp
+tile.LampGray.name=Gray Xychorium Lamp
+tile.LampPink.name=Pink Xychorium Lamp
+tile.LampLime.name=Lime Xychorium Lamp
+tile.LampYellow.name=Yellow Xychorium Lamp
+tile.LampLightBlue.name=Light Blue Xychorium Lamp
+tile.LampMagenta.name=Magenta Xychorium Lamp
+tile.LampOrange.name=Orange Xychorium Lamp
+tile.LampWhite.name=White Xychorium Lamp

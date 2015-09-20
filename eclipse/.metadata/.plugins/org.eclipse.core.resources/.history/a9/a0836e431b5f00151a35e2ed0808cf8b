@@ -1,0 +1,7 @@
+package com.foxy.xycraft.compat;
+
+import mcp.mobius.waila.api.ITaggedList;
+
+public class XyWAILA {
+
+}

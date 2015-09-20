@@ -1,9 +1,0 @@
-package com.foxy.xycraft.render;
-
-public class RenderRegistry {
-	
-	public static void renderingRegistry(){
-		
-	}
-
-}

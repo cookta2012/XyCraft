@@ -68,11 +68,11 @@ public class XyWorldGen implements IWorldGenerator {
 	}
 
 	private void generateSurface(Random random, int chunkX, int chunkZ, World world) {
-		addOre(XyBlocks.XyOreBlue, Blocks.stone, random, world, chunkX, chunkZ, 20, 60, 10, 20, 20);
-		addOre(XyBlocks.XyOreGreen, Blocks.stone, random, world, chunkX, chunkZ, 20, 60, 10, 20, 20);
-		addOre(XyBlocks.XyOreRed, Blocks.stone, random, world, chunkX, chunkZ, 20, 60, 10, 20, 20);
-		addOre(XyBlocks.XyOreDark, Blocks.stone, random, world, chunkX, chunkZ, 20, 60, 10, 20, 20);
-		addOre(XyBlocks.XyOreLight, Blocks.stone, random, world, chunkX, chunkZ, 20, 60, 10, 20, 20);
+		addOre(XyBlocks.XyOreBlue, Blocks.stone, random, world, chunkX, chunkZ, 20, 60, 3, 6, 7);
+		addOre(XyBlocks.XyOreGreen, Blocks.stone, random, world, chunkX, chunkZ, 20, 60, 3, 6, 7);
+		addOre(XyBlocks.XyOreRed, Blocks.stone, random, world, chunkX, chunkZ, 20, 60, 3, 6, 7);
+		addOre(XyBlocks.XyOreDark, Blocks.stone, random, world, chunkX, chunkZ, 20, 60, 3, 6, 7);
+		addOre(XyBlocks.XyOreLight, Blocks.stone, random, world, chunkX, chunkZ, 20, 60, 3, 6, 7);
 	}
 
 	private void generateNether(Random random, int chunkX, int chunkZ, World world) {

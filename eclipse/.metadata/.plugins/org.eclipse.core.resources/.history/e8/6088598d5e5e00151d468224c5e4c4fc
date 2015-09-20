@@ -1,0 +1,12 @@
+package com.foxy.xycraft.util;
+
+import net.minecraft.block.Block;
+import net.minecraft.world.World;
+import net.minecraftforge.common.IPlantable;
+import net.minecraftforge.common.util.ForgeDirection;
+
+public interface IIsFarmland {
+	
+    void func_149822_e(World p_149822_1_, int p_149822_2_, int p_149822_3_, int p_149822_4_);
+
+}

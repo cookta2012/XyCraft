@@ -4,6 +4,7 @@ import org.lwjgl.opengl.GL11;
 
 import com.foxy.xycraft.XyCraft;
 import com.foxy.xycraft.block.XychoriumBlock;
+import com.foxy.xycraft.block.machine.XychoriumLamp;
 import com.foxy.xycraft.proxy.ClientProxy;
 import com.foxy.xycraft.util.RGBColor;
 
@@ -23,6 +24,7 @@ public class RenderXy implements ISimpleBlockRenderingHandler {
 	public float r;
 	public float g;
 	public float b;
+	private static float darkLamp = 0.15F;
 	
 	public RenderXy(int renderID, int brightness, float r, float g, float b){
         this.renderBlockID = XyCraft.idCounter;
@@ -53,95 +55,110 @@ public class RenderXy implements ISimpleBlockRenderingHandler {
 	     
 	     tessellator.startDrawingQuads();
 	        tessellator.setBrightness(brightness);
-	        tessellator.setColorOpaque_F(r, g, b);
+	        if (block instanceof XychoriumLamp)
+	            tessellator.setColorOpaque_F(r * darkLamp, g * darkLamp, b * darkLamp);
+	        else
+	            tessellator.setColorOpaque_F(r, g, b);
 	        tessellator.setNormal(0.0F, -1.0F, 0.0F);
 	        renderer.renderFaceYNeg(block, 0.0D, 0.0D, 0.0D, block.getIcon(6, 1));
-	     tessellator.draw();
-	     
-	     tessellator.startDrawingQuads();
+	        tessellator.draw();
+
+	        tessellator.startDrawingQuads();
 	        tessellator.setBrightness(brightness);
-	        tessellator.setColorOpaque_F(r, g, b);
+	        if (block instanceof XychoriumLamp)
+	            tessellator.setColorOpaque_F(r * darkLamp, g * darkLamp, b * darkLamp);
+	        else
+	            tessellator.setColorOpaque_F(r, g, b);
 	        tessellator.setNormal(0.0F, 1.0F, 0.0F);
+
 	        if(block instanceof XychoriumBlock)
 	            renderer.renderFaceYPos(block, 0.0D, 0.0D, 0.0D, block.getIcon(7, 1));
 	        else
 	            renderer.renderFaceYPos(block, 0.0D, 0.0D, 0.0D, block.getIcon(6, 1));
-	     tessellator.draw();
-	     
-	     tessellator.startDrawingQuads();
+	        tessellator.draw();
+
+	        tessellator.startDrawingQuads();
 	        tessellator.setBrightness(brightness);
-	        tessellator.setColorOpaque_F(r, g, b);
+	        if (block instanceof XychoriumLamp)
+	            tessellator.setColorOpaque_F(r * darkLamp, g * darkLamp, b * darkLamp);
+	        else
+	            tessellator.setColorOpaque_F(r, g, b);
 	        tessellator.setNormal(0.0F, 0.0F, -1.0F);
 	        if(block instanceof XychoriumBlock)
 	            renderer.renderFaceZNeg(block, 0.0D, 0.0D, 0.0D, block.getIcon(8, 1));
 	        else
 	            renderer.renderFaceZNeg(block, 0.0D, 0.0D, 0.0D, block.getIcon(6, 1));
-	     tessellator.draw();
-	     
-	     tessellator.startDrawingQuads();
+	        tessellator.draw();
+
+	        tessellator.startDrawingQuads();
 	        tessellator.setBrightness(brightness);
-	        tessellator.setColorOpaque_F(r, g, b);
+	        if (block instanceof XychoriumLamp)
+	            tessellator.setColorOpaque_F(r * darkLamp, g * darkLamp, b * darkLamp);
+	        else
+	            tessellator.setColorOpaque_F(r, g, b);
 	        tessellator.setNormal(0.0F, 0.0F, 1.0F);
 	        if(block instanceof XychoriumBlock)
 	            renderer.renderFaceZPos(block, 0.0D, 0.0D, 0.0D, block.getIcon(9, 1));
 	        else
 	            renderer.renderFaceZPos(block, 0.0D, 0.0D, 0.0D, block.getIcon(6, 1));
-	     tessellator.draw();
-	     
-	     tessellator.startDrawingQuads();
+	        tessellator.draw();
+
+	        tessellator.startDrawingQuads();
 	        tessellator.setBrightness(brightness);
-	        tessellator.setColorOpaque_F(r, g, b);
+	        if (block instanceof XychoriumLamp)
+	            tessellator.setColorOpaque_F(r * darkLamp, g * darkLamp, b * darkLamp);
+	        else
+	            tessellator.setColorOpaque_F(r, g, b);
 	        tessellator.setNormal(-1.0F, 0.0F, 0.0F);
 	        if(block instanceof XychoriumBlock)
 	            renderer.renderFaceXNeg(block, 0.0D, 0.0D, 0.0D, block.getIcon(10, 1));
 	        else
 	            renderer.renderFaceXNeg(block, 0.0D, 0.0D, 0.0D, block.getIcon(6, 1));
-	     tessellator.draw();
-	     
-	     tessellator.startDrawingQuads();
+	        tessellator.draw();
+
+	        tessellator.startDrawingQuads();
 	        tessellator.setBrightness(brightness);
-	        tessellator.setColorOpaque_F(r, g, b);
+	        if (block instanceof XychoriumLamp)
+	            tessellator.setColorOpaque_F(r * darkLamp, g * darkLamp, b * darkLamp);
+	        else
+	            tessellator.setColorOpaque_F(r, g, b);
 	        tessellator.setNormal(1.0F, 0.0F, 0.0F);
 	        if(block instanceof XychoriumBlock)
 	            renderer.renderFaceXPos(block, 0.0D, 0.0D, 0.0D, block.getIcon(11, 1));
 	        else
 	            renderer.renderFaceXPos(block, 0.0D, 0.0D, 0.0D, block.getIcon(6, 1));
-	     tessellator.draw();
-	     
-	     // >>INNER LAYER<<
-	     //---------------------------------------------------------
-	     // >>OUTER LAYER<<
-	        
-	     tessellator.startDrawingQuads();
+	        tessellator.draw();
+
+	        tessellator.startDrawingQuads();
 	        tessellator.setNormal(0.0F, -1.0F, 0.0F);
 	        renderer.renderFaceYNeg(block, 0.0D, 0.0D, 0.0D, block.getIcon(0, 2));
-	     tessellator.draw();
+	        tessellator.draw();
 
-	     tessellator.startDrawingQuads();
+	        tessellator.startDrawingQuads();
 	        tessellator.setNormal(0.0F, 1.0F, 0.0F);
 	        renderer.renderFaceYPos(block, 0.0D, 0.0D, 0.0D, block.getIcon(1, 2));
-	     tessellator.draw();
+	        tessellator.draw();
 
-	     tessellator.startDrawingQuads();
+	        tessellator.startDrawingQuads();
 	        tessellator.setNormal(0.0F, 0.0F, -1.0F);
 	        renderer.renderFaceZNeg(block, 0.0D, 0.0D, 0.0D, block.getIcon(2, 2));
-	     tessellator.draw();
+	        tessellator.draw();
 
-	     tessellator.startDrawingQuads();
+	        tessellator.startDrawingQuads();
 	        tessellator.setNormal(0.0F, 0.0F, 1.0F);
 	        renderer.renderFaceZPos(block, 0.0D, 0.0D, 0.0D, block.getIcon(3, 2));
-	     tessellator.draw();
+	        tessellator.draw();
 
-	     tessellator.startDrawingQuads();
+	        tessellator.startDrawingQuads();
 	        tessellator.setNormal(-1.0F, 0.0F, 0.0F);
 	        renderer.renderFaceXNeg(block, 0.0D, 0.0D, 0.0D, block.getIcon(4, 2));
-	     tessellator.draw();
+	        tessellator.draw();
 
-	     tessellator.startDrawingQuads();
+	        tessellator.startDrawingQuads();
 	        tessellator.setNormal(1.0F, 0.0F, 0.0F);
 	        renderer.renderFaceXPos(block, 0.0D, 0.0D, 0.0D, block.getIcon(5, 2));
-	     tessellator.draw();
-	     
+	        tessellator.draw();
+
 	     GL11.glTexParameteri(GL11.GL_TEXTURE_2D, GL11.GL_TEXTURE_MIN_FILTER, minFilter);
 	     GL11.glTexParameteri(GL11.GL_TEXTURE_2D, GL11.GL_TEXTURE_MAG_FILTER, magFilter);
 	     
@@ -165,7 +182,16 @@ public class RenderXy implements ISimpleBlockRenderingHandler {
 		
 		tess.addTranslation(x, y, z);
 		tess.setBrightness(brightness);
-		tess.setColorOpaque_F(r, g, b);
+		
+		if (block instanceof XychoriumLamp) {
+            if (meta == 0)
+                tess.setColorOpaque_F(r * darkLamp, g * darkLamp, b * darkLamp);
+            else if (meta == 1)
+                tess.setColorOpaque_F(r, g, b);
+        }
+        else
+            tess.setColorOpaque_F(r, g, b);
+
 		
 		//DOWN
 		if(block.shouldSideBeRendered(world, x, y - 1, z, 0)){

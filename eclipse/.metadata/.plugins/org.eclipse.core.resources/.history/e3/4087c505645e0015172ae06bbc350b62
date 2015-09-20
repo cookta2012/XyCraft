@@ -1,0 +1,18 @@
+package com.foxy.xycraft.block.machine;
+
+import com.foxy.xycraft.XyTabs;
+
+import net.minecraft.block.BlockFarmland;
+import net.minecraft.block.material.Material;
+
+public class XyFarmHelper extends BlockFarmland {
+	
+	public XyFarmHelper(String blockName){
+		super();
+		this.setBlockName(blockName);
+		this.setTickRandomly(true);
+		this.setCreativeTab(XyTabs.tabXMachines);
+		this.setHardness(1.5F);
+	}
+
+}

@@ -1,0 +1,9 @@
+package com.foxy.xycraft.compat;
+
+public class XyThaumcraft {
+	
+	public static void onThaumcraftCall(){
+		
+	}
+
+}

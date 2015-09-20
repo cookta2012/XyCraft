@@ -1,0 +1,15 @@
+package com.foxy.xycraft.item;
+
+import com.foxy.xycraft.XyCraft;
+
+import net.minecraft.block.Block;
+import net.minecraft.item.Item;
+
+public class XyBaseSeed extends Item {
+	
+	public XyBaseSeed(String itemName, String subFolder, Block crop){
+		this.setUnlocalizedName(itemName);
+		this.setTextureName(XyCraft.INSTANCE + ":" + subFolder + "/" + itemName);
+	}
+
+}

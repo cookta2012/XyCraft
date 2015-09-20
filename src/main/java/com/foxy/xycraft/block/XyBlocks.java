@@ -1,8 +1,6 @@
 package com.foxy.xycraft.block;
 
 import com.foxy.xycraft.item.XyItems;
-
-import cofh.lib.util.helpers.ItemHelper;
 import cpw.mods.fml.common.registry.GameRegistry;
 import net.minecraft.block.Block;
 import net.minecraft.block.material.Material;
@@ -95,10 +93,11 @@ public class XyBlocks {
     public static Block XyPlatformMagenta;
     public static Block XyPlatformOrange;
     public static Block XyPlatformWhite;
+    
+    public static Block CropCorn;
 	
 	public static void preInit(){
 		GameRegistry reg = null;
-		ItemHelper ih = null;
 		
 		reg.registerBlock(XyOreBlue = (new XychoriumOre("XyOreBlue")), "XyOreBlue");
 		reg.registerBlock(XyOreGreen = (new XychoriumOre("XyOreGreen")), "XyOreGreen");
@@ -185,6 +184,8 @@ public class XyBlocks {
 		reg.registerBlock(XyPlatformMagenta = (new XychoriumPlatform("XyPlatformMagenta")), "XyPlatformMagenta");
 		reg.registerBlock(XyPlatformOrange = (new XychoriumPlatform("XyPlatformOrange")), "XyPlatformOrange");
 		reg.registerBlock(XyPlatformWhite = (new XychoriumPlatform("XyPlatformWhite")), "XyPlatformWhite");
+		
+		reg.registerBlock(CropCorn = (new XyCrop("CropCorn", "crop/corn", "0B", "1B", "2B", "3B", "4B", "0T")), "CropCorn");
 		
 	}
 

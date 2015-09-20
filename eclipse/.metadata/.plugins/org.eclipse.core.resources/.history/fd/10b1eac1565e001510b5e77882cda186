@@ -1,0 +1,23 @@
+package com.foxy.xycraft.item;
+
+import com.foxy.xycraft.XyTabs;
+
+import net.minecraft.item.ItemFood;
+
+public class XyBaseFood extends ItemFood {
+
+	public XyBaseFood(String itemName, String modid, String subFolder, int hungerFill, float satMod, boolean wolfFood) {
+		super(hungerFill, satMod, wolfFood);
+		this.setUnlocalizedName(itemName);
+		this.setTextureName(modid + ":" + subFolder + "/" + itemName);
+		this.setCreativeTab(XyTabs.tabXItems);
+	}
+	
+	public XyBaseFood(String itemName, String modid, int hungerFill, float satMod, boolean wolfFood) {
+		super(hungerFill, satMod, wolfFood);
+		this.setUnlocalizedName(itemName);
+		this.setTextureName(modid + ":" + itemName);
+		this.setCreativeTab(XyTabs.tabXItems);
+	}
+
+}

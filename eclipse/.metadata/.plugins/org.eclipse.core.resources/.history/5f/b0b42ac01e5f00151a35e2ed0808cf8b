@@ -1,0 +1,52 @@
+package com.foxy.xycraft.compat.handler;
+
+import java.util.List;
+
+import com.foxy.xycraft.block.XyBlocks;
+
+import mcp.mobius.waila.api.IWailaConfigHandler;
+import mcp.mobius.waila.api.IWailaDataAccessor;
+import mcp.mobius.waila.api.IWailaDataProvider;
+import net.minecraft.entity.player.EntityPlayerMP;
+import net.minecraft.item.ItemStack;
+import net.minecraft.nbt.NBTTagCompound;
+import net.minecraft.tileentity.TileEntity;
+import net.minecraft.world.World;
+
+public class WAILAHandler implements IWailaDataProvider {
+	
+	public static List<String> textBody;
+	public static List<String> textHead;
+	public static List<String> textTail;
+	
+	public WAILAHandler(List<String> textBody){
+		this.textBody = textBody;
+	}
+	
+	@Override
+	public ItemStack getWailaStack(IWailaDataAccessor acc, IWailaConfigHandler hand) {
+		return null;
+	}
+
+	@Override
+	public NBTTagCompound getNBTData(EntityPlayerMP player, TileEntity tile, NBTTagCompound tag, World world, int x, int y, int z) {
+		return tag;
+	}
+
+	@Override
+	public List<String> getWailaBody(ItemStack itemStack, List<String> currentTip, IWailaDataAccessor acc, IWailaConfigHandler arg3) {
+		return currentTip;
+	}
+
+	@Override
+	public List<String> getWailaHead(ItemStack itemStack, List<String> currentTip, IWailaDataAccessor acc,
+			IWailaConfigHandler arg3) {
+		return currentTip;
+	}
+
+	@Override
+	public List<String> getWailaTail(ItemStack itemStack, List<String> currentTip, IWailaDataAccessor acc, IWailaConfigHandler hand) {
+		return currentTip;
+	}
+
+}

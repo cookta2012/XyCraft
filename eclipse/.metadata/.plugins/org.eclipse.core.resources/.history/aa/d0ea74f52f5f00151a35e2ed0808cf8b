@@ -1,0 +1,18 @@
+package com.foxy.xycraft.block.machine;
+
+import com.foxy.xycraft.XyTabs;
+import com.foxy.xycraft.block.XyBaseBlock;
+import net.minecraft.block.Block;
+import net.minecraft.block.material.Material;
+
+public class XychoriumLamp extends XyBaseBlock {
+
+	public XychoriumLamp(String blockName) {
+		super(Material.iron);
+		this.setBlockName(blockName);
+		this.setHardness(1.5F);
+		this.setStepSound(Block.soundTypeMetal);
+		this.setCreativeTab(XyTabs.tabXMachines);
+	}
+
+}

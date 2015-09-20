@@ -1,0 +1,11 @@
+package com.foxy.xycraft.compat;
+
+import mcp.mobius.waila.api.IWailaRegistrar;
+
+public class XyWAILA {
+	
+	public static void onWailaCall(IWailaRegistrar reg){
+		
+	}
+
+}

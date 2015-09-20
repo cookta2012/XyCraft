@@ -8,7 +8,9 @@ import cpw.mods.fml.relauncher.Side;
 import cpw.mods.fml.relauncher.SideOnly;
 import net.minecraft.block.Block;
 import net.minecraft.block.material.Material;
+import net.minecraft.block.material.MaterialLiquid;
 import net.minecraft.client.renderer.texture.IIconRegister;
+import net.minecraft.init.Blocks;
 import net.minecraft.util.IIcon;
 import net.minecraft.world.IBlockAccess;
 import net.minecraft.world.World;
@@ -54,13 +56,21 @@ public class XychoriumVoid extends XyBaseBlock {
     }
 	
 	@Override
-    public boolean canPlaceTorchOnTop(World world, int x, int y, int z) {
-        return false;
-    }
+	public void onNeighborBlockChange(World world, int x, int y, int z, Block block) {
+		for (ForgeDirection dir : ForgeDirection.VALID_DIRECTIONS)
+			voidFluid(world, x, y, z, dir);
+	}
 	
 	@Override
-    public boolean isSideSolid(IBlockAccess world, int x, int y, int z, ForgeDirection side) {
-        return false;
-    }
+	public void onBlockAdded(World world, int x, int y, int z) {
+		for (ForgeDirection dir : ForgeDirection.VALID_DIRECTIONS)
+			voidFluid(world, x, y, z, dir);
+	}
+	
+	public void voidFluid(World world, int x, int y, int z, ForgeDirection dir) {
+		if (world.getBlock(x + dir.offsetX, y + dir.offsetY, z + dir.offsetZ).getMaterial() instanceof MaterialLiquid) {
+			world.setBlock(x + dir.offsetX, y + dir.offsetY, z + dir.offsetZ, Blocks.air);
+		}
+	}
 
 }

@@ -3,6 +3,7 @@ package com.foxy.xycraft.item;
 import com.foxy.xycraft.XyTabs;
 
 import net.minecraft.item.Item;
+import net.minecraft.item.ItemSeeds;;
 
 public class XyBaseItem extends Item {
 	

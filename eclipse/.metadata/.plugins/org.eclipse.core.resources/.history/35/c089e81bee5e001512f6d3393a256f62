@@ -1,0 +1,12 @@
+package com.foxy.xycraft.item;
+
+import net.minecraft.block.Block;
+import net.minecraft.item.Item;
+
+public class XyBaseSeed extends Item {
+	
+	public XyBaseSeed(String itemName, Block crop){
+		this.setUnlocalizedName(itemName);
+	}
+
+}

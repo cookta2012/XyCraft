@@ -2,6 +2,6 @@ package com.foxy.xycraft.util;
 
 public class BlockCounter {
 	
-	public static int countBlocks = 89;
+	public static int countBlocks = 105;
 
 }

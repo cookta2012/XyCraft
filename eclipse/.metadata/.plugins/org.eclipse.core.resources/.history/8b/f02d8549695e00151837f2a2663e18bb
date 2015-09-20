@@ -1,0 +1,14 @@
+package com.foxy.xycraft.block.machine;
+
+import com.foxy.xycraft.XyTabs;
+
+import net.minecraft.block.BlockFarmland;
+
+public class XyFarmBlock extends BlockFarmland {
+	
+	public XyFarmBlock(String blockName){
+		this.setBlockName(blockName);
+		this.setCreativeTab(XyTabs.tabXMachines);
+	}
+
+}

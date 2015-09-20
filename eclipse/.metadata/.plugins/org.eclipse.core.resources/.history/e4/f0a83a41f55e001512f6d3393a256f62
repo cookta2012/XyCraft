@@ -1,0 +1,36 @@
+[19:36:21] [main/INFO]: Setting user: Player46
+[19:36:24] [Client thread/INFO]: LWJGL Version: 2.9.1
+[19:36:30] [Client thread/INFO]: Reloading ResourceManager: Default, FMLFileResourcePack:Forge Mod Loader, FMLFileResourcePack:Minecraft Forge, FMLFileResourcePack:Not Enough Items, FMLFileResourcePack:§3XyCraft
+[19:36:32] [Sound Library Loader/INFO]: Sound engine started
+[19:36:36] [Client thread/INFO]: Created: 512x512 textures/blocks-atlas
+[19:36:36] [Client thread/INFO]: Created: 512x256 textures/items-atlas
+[19:36:37] [Client thread/INFO]: Reloading ResourceManager: Default, FMLFileResourcePack:Forge Mod Loader, FMLFileResourcePack:Minecraft Forge, FMLFileResourcePack:Not Enough Items, FMLFileResourcePack:§3XyCraft
+[19:36:37] [Client thread/INFO]: Created: 512x256 textures/items-atlas
+[19:36:38] [Client thread/INFO]: Created: 512x512 textures/blocks-atlas
+[19:36:39] [Sound Library Loader/INFO]: Sound engine started
+[19:36:46] [Server thread/INFO]: Starting integrated minecraft server version 1.7.10
+[19:36:46] [Server thread/INFO]: Generating keypair
+[19:36:46] [Server thread/INFO]: Preparing start region for level 0
+[19:36:47] [Server thread/INFO]: Changing view distance to 4, from 10
+[19:36:48] [Server thread/INFO]: Player46[local:E:b67b211e] logged in with entity id 243 at (360.60080409445254, 4.0, -7.078908614347954)
+[19:36:48] [Server thread/INFO]: Player46 joined the game
+[19:37:06] [Server thread/INFO]: Player46 has just earned the achievement [Taking Inventory]
+[19:37:06] [Client thread/INFO]: [CHAT] Player46 has just earned the achievement [Taking Inventory]
+[19:37:20] [Server thread/INFO]: [Player46: Given [Glass Viewer] * 64 to Player46]
+[19:37:20] [Client thread/INFO]: [CHAT] Given [Glass Viewer] * 64 to Player46
+[19:37:36] [Server thread/INFO]: [Player46: Given [Xychorium Soil] * 1 to Player46]
+[19:37:36] [Client thread/INFO]: [CHAT] Given [Xychorium Soil] * 1 to Player46
+[19:37:40] [Client thread/INFO]: [CHAT] Day 3. 6:00
+[19:37:41] [Server thread/INFO]: [Player46: Given [Corn Seeds] * 1 to Player46]
+[19:37:41] [Client thread/INFO]: [CHAT] Given [Corn Seeds] * 1 to Player46
+[19:37:56] [Server thread/INFO]: Saving and pausing game...
+[19:37:56] [Server thread/INFO]: Saving chunks for level 'Test World I'/Overworld
+[19:37:57] [Server thread/INFO]: Saving chunks for level 'Test World I'/Nether
+[19:37:57] [Server thread/INFO]: Saving chunks for level 'Test World I'/The End
+[19:37:57] [Server thread/INFO]: Stopping server
+[19:37:57] [Server thread/INFO]: Saving players
+[19:37:57] [Server thread/INFO]: Saving worlds
+[19:37:57] [Server thread/INFO]: Saving chunks for level 'Test World I'/Overworld
+[19:37:57] [Server thread/INFO]: Saving chunks for level 'Test World I'/Nether
+[19:37:57] [Server thread/INFO]: Saving chunks for level 'Test World I'/The End
+[19:37:58] [Client thread/INFO]: Stopping!

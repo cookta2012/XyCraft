@@ -1,13 +1,13 @@
 package com.foxy.xycraft.item;
 
 import net.minecraft.item.Item;
+import net.minecraft.item.ItemFood;
 import net.minecraft.item.ItemStack;
-import cofh.core.item.ItemBase;
-import cofh.lib.util.helpers.ItemHelper;
 import cpw.mods.fml.common.registry.GameRegistry;
 
 import com.foxy.xycraft.XyCraft;
 import com.foxy.xycraft.XyTabs;
+import com.foxy.xycraft.block.XyBlocks;
 
 public class XyItems {
 
@@ -42,6 +42,11 @@ public class XyItems {
 		reg.registerItem(XychoriditeRed = (new XyBaseItem(XyCraft.INSTANCE, "XychoriditeRed", "material")), "XychoriditeRed");
 		reg.registerItem(XychoriditeDark = (new XyBaseItem(XyCraft.INSTANCE, "XychoriditeDark", "material")), "XychoriditeDark");
 		reg.registerItem(XychoriditeLight = (new XyBaseItem(XyCraft.INSTANCE, "XychoriditeLight", "material")), "XychoriditeLight");
+		
+		reg.registerItem(SeedCorn = (new XyBaseSeed(XyCraft.INSTANCE, "SeedCorn", "food", XyBlocks.CropCorn)), "SeedCorn");
+		reg.registerItem(Corn = (new XyBaseFood("Corn", XyCraft.INSTANCE, "food", 2, 0.5F, false)), "Corn");
+		reg.registerItem(CobOCorn = (new XyBaseFood("CobOCorn", XyCraft.INSTANCE, "food", 3, 1.0F, true)), "CobOCorn");
+		reg.registerItem(PopCorn = (new XyBaseFood("PopCorn", XyCraft.INSTANCE, "food", 5, 3.0F, true)), "PopCorn");
 	}
 
 }

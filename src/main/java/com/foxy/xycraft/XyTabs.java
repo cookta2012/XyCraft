@@ -5,8 +5,6 @@ import java.util.Random;
 import com.foxy.xycraft.block.XyBlocks;
 import com.foxy.xycraft.block.machine.XyMachines;
 import com.foxy.xycraft.item.XyItems;
-
-import cofh.lib.util.helpers.ItemHelper;
 import cpw.mods.fml.relauncher.Side;
 import cpw.mods.fml.relauncher.SideOnly;
 import net.minecraft.creativetab.CreativeTabs;

@@ -1,0 +1,5 @@
+package com.foxy.xycraft.util;
+
+public interface IIsFarmland {
+
+}

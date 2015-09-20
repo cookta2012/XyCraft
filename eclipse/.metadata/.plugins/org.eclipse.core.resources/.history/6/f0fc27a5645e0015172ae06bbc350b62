@@ -1,0 +1,82 @@
+package com.foxy.xycraft.block.machine;
+
+import com.foxy.xycraft.XyCraft;
+import com.foxy.xycraft.XyTabs;
+import com.foxy.xycraft.render.RenderRegistry;
+
+import cpw.mods.fml.relauncher.Side;
+import cpw.mods.fml.relauncher.SideOnly;
+import net.minecraft.block.Block;
+import net.minecraft.block.BlockFarmland;
+import net.minecraft.block.material.Material;
+import net.minecraft.world.World;
+import net.minecraftforge.common.IPlantable;
+import net.minecraftforge.common.util.ForgeDirection;
+
+public class XyFarmHelper extends BlockFarmland {
+	
+	public int idBlock;
+	
+	public XyFarmHelper(String blockName){
+		super();
+		this.setBlockName(blockName);
+		this.setTickRandomly(true);
+		this.setCreativeTab(XyTabs.tabXMachines);
+		this.setHardness(1.5F);
+		this.setStepSound(Block.soundTypeMetal);
+        idBlock = XyCraft.idCounter;
+        XyCraft.idCounter++;
+	}
+	
+	@Override
+    @SideOnly(Side.CLIENT)
+    public boolean renderAsNormalBlock() {
+        return false;
+    }
+    
+    @Override
+    @SideOnly(Side.CLIENT)
+    public int getRenderType() {
+        return RenderRegistry.renderID[idBlock];
+    }
+
+    @Override
+    @SideOnly(Side.CLIENT)
+    public boolean canRenderInPass(int pass) {
+        RenderRegistry.renderPass[idBlock] = pass;
+        return true;
+    }
+
+    @Override
+    @SideOnly(Side.CLIENT)
+    public int getRenderBlockPass() {
+        return 1;
+    }
+
+    @Override
+    @SideOnly(Side.CLIENT)
+    public boolean isBlockNormalCube() {
+        return true;
+    }
+    
+    private boolean func_149822_e(World p_149822_1_, int p_149822_2_, int p_149822_3_, int p_149822_4_)
+    {
+        byte b0 = 0;
+
+        for (int l = p_149822_2_ - b0; l <= p_149822_2_ + b0; ++l)
+        {
+            for (int i1 = p_149822_4_ - b0; i1 <= p_149822_4_ + b0; ++i1)
+            {
+                Block block = p_149822_1_.getBlock(l, p_149822_3_ + 1, i1);
+
+                if (block instanceof IPlantable && canSustainPlant(p_149822_1_, p_149822_2_, p_149822_3_, p_149822_4_, ForgeDirection.UP, (IPlantable)block))
+                {
+                    return true;
+                }
+            }
+        }
+
+        return false;
+    }
+
+}

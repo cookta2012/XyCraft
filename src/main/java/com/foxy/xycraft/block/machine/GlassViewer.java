@@ -13,14 +13,14 @@ import net.minecraft.util.IIcon;
 import net.minecraft.world.IBlockAccess;
 import net.minecraft.block.BlockGlass;
 
-public class GlassViewer extends Block {
+public class GlassViewer extends BlockGlass {
 
-	public GlassViewer(String blockName) {
-		super(Material.glass);
+	public GlassViewer(String blockName, boolean p_i45408_2_) {
+		super(Material.glass, p_i45408_2_);
 		this.setBlockName(blockName);
-		this.setCreativeTab(XyTabs.tabXMachines);
 		this.setHardness(1.0F);
 		this.setStepSound(Block.soundTypeGlass);
+		this.setCreativeTab(XyTabs.tabXMachines);
 	}
 	
 	@SideOnly(Side.CLIENT)
@@ -36,17 +36,16 @@ public class GlassViewer extends Block {
 	@Override
     @SideOnly(Side.CLIENT)
     public IIcon getIcon(int side, int meta) {
-        if (side < 6)
             return icon[0];
-        else 
-        	return icon[0];
     }
 	
+	@Override
+    @SideOnly(Side.CLIENT)
     public int getRenderBlockPass()
     {
         return 1;
     }
-    
+	
     public boolean renderAsNormalBlock()
     {
         return false;

@@ -1,0 +1,20 @@
+package com.foxy.xycraft.compat;
+
+import com.foxy.xycraft.block.XyBlocks;
+import com.foxy.xycraft.block.XychoriumOre;
+import com.foxy.xycraft.block.machine.GlassViewer;
+import com.foxy.xycraft.compat.provider.XyBodyProvider;
+
+import mcp.mobius.waila.api.IWailaRegistrar;
+import net.minecraft.block.Block;
+import net.minecraft.world.World;
+
+public class XyWAILA {
+	
+	public static String body = "TEEEEEST";
+	
+	public static void onWailaCall(IWailaRegistrar reg){
+		reg.registerBodyProvider(new XyBodyProvider(body), XychoriumOre.class);
+	}
+
+}

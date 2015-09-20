@@ -4,11 +4,11 @@ fov:0.0
 gamma:0.0
 saturation:0.0
 renderDistance:4
-guiScale:0
+guiScale:2
 particles:0
 bobView:true
 anaglyph3d:false
-advancedOpengl:false
+advancedOpengl:true
 maxFps:260
 fboEnable:true
 difficulty:0
@@ -85,9 +85,16 @@ key_key.hotbar.6:7
 key_key.hotbar.7:8
 key_key.hotbar.8:9
 key_key.hotbar.9:10
-key_key.cofh.empower:47
-key_key.cofh.multimode:46
-soundCategory_master:0.21523179
+key_Baubles Inventory:48
+key_Change Wand Focus:33
+key_Activate Hover Harness:35
+key_Misc Wand Toggle:34
+key_waila.keybind.wailaconfig:82
+key_waila.keybind.wailadisplay:79
+key_waila.keybind.liquid:80
+key_waila.keybind.recipe:81
+key_waila.keybind.usage:75
+soundCategory_master:0.06622516
 soundCategory_music:0.0
 soundCategory_record:1.0
 soundCategory_weather:1.0
