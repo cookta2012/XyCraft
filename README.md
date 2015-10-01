@@ -1,15 +1,20 @@
-# XyCraft
-A port of the 1.4.7 mod XyCraft.
-This port is not permitted from Soaryn; 
-Private use only !
+# XyCraft Port Project 2K15 ©
+This is a port of the Minecraft Mod XyCraft.
 
-# How do i get the mod ?
-1. Install Minecraft 1.7.10
-2. Install Forge for 1.7.10
-3. Go to 'Releases' and download the newest version
-4. Throw the .jar in your 'mods' folder
-5. Start up the game
-6. HAVE FUN WITH SHINY THINGS :D
+The original Mod is/was developed by @Soaryn.
+The Last Version of the original XyCraft was for 
+Minecraft 1.4.7.
+
+This port is for Minecraft 1.7.10 (Forge Build 1448).
+It is developed by KitsuneAlex and makes use of
+@ChickenBones CodeChickenLib (Forge Modding Lib)
+
+# Version Statement
+Current XPP Version: 0.13.2
+Current Minecraft Version: 1.7.10
+Current Forge Build: 1448
+Current SMP comp.: YES
+Current Tag: STABLE 0.13.2
 
 # Licensing
-DBAJ License v1 by KingLemming !
+Dont-Be-A-Jerk License by King Lemming
