@@ -1,20 +1,24 @@
-# XyCraft Port Project 2K15 ©
-This is a port of the Minecraft Mod XyCraft.
+#XyCraft 
+This is the 1.4.7 XyCraft for Minecraft 1.7.10. 
 
-The original Mod is/was developed by @Soaryn.
-The Last Version of the original XyCraft was for 
-Minecraft 1.4.7.
+It is 90% written from scratch except the original block models and
+the original renderers. (See code refrence for that)
 
-This port is for Minecraft 1.7.10 (Forge Build 1448).
-It is developed by KitsuneAlex and makes use of
-@ChickenBones CodeChickenLib (Forge Modding Lib)
+#Code Refrence
+Currently copied code from the original XyCraft: (Class Names)
 
-# Version Statement
-Current XPP Version: 0.13.2
-Current Minecraft Version: 1.7.10
-Current Forge Build: 1448
-Current SMP comp.: YES
-Current Tag: STABLE 0.13.2
+RenderTruncatedIcosahedron, ModelElectrolyzer, ModelEngineeringTable, ModelLiquidizer
 
-# Licensing
-Dont-Be-A-Jerk License by King Lemming
+#General Information
+This mod makes use of CodeChickenLib by @ChickenBones.
+
+Big thanks to @Soaryn117 for making (and still developing) the original XyCraft !
+
+#Versioning
+Current Stable Build: 0.13.2
+
+Current Latest Build: 0.13.2
+
+Current Beta Build*: X.XX.X
+
+(*Test Builds that are maybe buggy but contain more content)
